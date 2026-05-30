@@ -1,0 +1,226 @@
+.match-score-summary-card {
+  background: linear-gradient(135deg, #f8fafc, #f1f5f9);
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.score-badge-large {
+  flex-shrink: 0;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.score-badge-large.green {
+  border: 6px solid #10b981;
+}
+
+.score-badge-large.amber {
+  border: 6px solid #f59e0b;
+}
+
+.score-badge-large.red {
+  border: 6px solid #ef4444;
+}
+
+.score-percent {
+  font-size: 26px;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.score-lbl {
+  font-size: 10px;
+  font-weight: 700;
+  color: #64748b;
+}
+
+.fit-rating-details h5 {
+  margin: 0 0 4px 0;
+  font-size: 15px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.alignment-verdict {
+  margin: 0;
+  font-size: 13px;
+  color: #475569;
+  font-weight: 500;
+}
+
+.fit-ai-paragraph-box {
+  background: rgba(99, 102, 241, 0.04);
+  border: 1px solid rgba(99, 102, 241, 0.15);
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.fit-ai-paragraph-box h5, .skills-table-section h5, .goals-alignment-section h5, .availability-check-section h5 {
+  margin: 0 0 12px 0;
+  font-size: 14px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.ai-explanation-bubble {
+  font-size: 13.5px;
+  line-height: 1.6;
+  color: #1e1b4b;
+  font-style: italic;
+}
+
+.skills-table-wrapper {
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.skills-align-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  text-align: left;
+}
+
+.skills-align-table th {
+  background: #f8fafc;
+  padding: 10px 14px;
+  font-weight: 600;
+  color: #475569;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.skills-align-table td {
+  padding: 10px 14px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.skills-align-table tr:last-child td {
+  border-bottom: none;
+}
+
+.skill-nm {
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.skill-type-badge {
+  font-size: 10px;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.skill-type-badge.req {
+  background: #eff6ff;
+  color: #1d4ed8;
+}
+
+.skill-type-badge.help {
+  background: #faf5ff;
+  color: #6b21a8;
+}
+
+.status-badge {
+  font-size: 11px;
+  font-weight: 600;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.status-badge.match {
+  background: rgba(16, 185, 129, 0.1);
+  color: #047857;
+}
+
+.status-badge.gap-crit {
+  background: rgba(239, 68, 68, 0.1);
+  color: #b91c1c;
+}
+
+.status-badge.gap-minor {
+  background: rgba(245, 158, 11, 0.1);
+  color: #b45309;
+}
+
+.goals-align-positive {
+  display: flex;
+  gap: 12px;
+  background: rgba(16, 185, 129, 0.05);
+  border: 1px solid rgba(16, 185, 129, 0.15);
+  border-radius: 8px;
+  padding: 12px 16px;
+}
+
+.goal-icon {
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+.goals-align-text .goals-title {
+  font-weight: 700;
+  font-size: 13px;
+  color: #065f46;
+  display: block;
+}
+
+.goals-align-text p {
+  margin: 4px 0 0 0;
+  font-size: 12.5px;
+  color: #065f46;
+}
+
+.no-goals-message {
+  font-size: 12.5px;
+  color: #64748b;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.availability-card {
+  display: flex;
+  gap: 12px;
+  border-radius: 8px;
+  padding: 12px 16px;
+  border: 1px solid;
+}
+
+.availability-card.fits {
+  background: rgba(16, 185, 129, 0.05);
+  border-color: rgba(16, 185, 129, 0.15);
+  color: #065f46;
+}
+
+.availability-card.exceeds {
+  background: rgba(239, 68, 68, 0.05);
+  border-color: rgba(239, 68, 68, 0.15);
+  color: #991b1b;
+}
+
+.availability-icon {
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+.avail-title {
+  font-weight: 700;
+  font-size: 13px;
+  display: block;
+}
+
+.availability-info p {
+  margin: 4px 0 0 0;
+  font-size: 12.5px;
+  line-height: 1.4;
+}

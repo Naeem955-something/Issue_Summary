@@ -1,0 +1,296 @@
+.skill-profile-card {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  margin-bottom: 24px;
+}
+
+.header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.skills-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.skill-category h4 {
+  margin: 0 0 10px 0;
+  font-size: 14px;
+  color: #555;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.chip-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+.skill-chip {
+  display: flex;
+  align-items: center;
+  background: #f1f5f9;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 4px 8px;
+  font-size: 14px;
+  position: relative;
+  cursor: help;
+}
+
+.skill-name {
+  font-weight: 500;
+  color: #334155;
+  margin-right: 8px;
+}
+
+.proficiency-badge {
+  font-size: 11px;
+  padding: 2px 6px;
+  border-radius: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-right: 6px;
+}
+
+.proficiency-badge.beginner {
+  background: #e2e8f0;
+  color: #64748b;
+}
+
+.proficiency-badge.intermediate {
+  background: #fef3c7;
+  color: #d97706;
+}
+
+.proficiency-badge.advanced {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  color: #94a3b8;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 1;
+  padding: 0 4px;
+}
+
+.delete-btn:hover {
+  color: #ef4444;
+}
+
+.add-btn {
+  background: #f1f5f9;
+  border: 1px dashed #cbd5e1;
+  border-radius: 16px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #64748b;
+  cursor: pointer;
+  font-size: 18px;
+  transition: all 0.2s ease;
+}
+
+.add-btn:hover {
+  background: #e2e8f0;
+  border-color: #6366f1;
+  color: #6366f1;
+}
+
+/* Inline Add Skill Form */
+.add-skill-form {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 2px 8px 2px 10px;
+  animation: fadeIn 0.3s ease;
+}
+
+.add-skill-input {
+  border: none;
+  background: transparent;
+  font-size: 13px;
+  color: #334155;
+  outline: none;
+  width: 100px;
+  font-family: inherit;
+}
+
+.add-skill-select {
+  border: none;
+  background: #f1f5f9;
+  border-radius: 10px;
+  font-size: 11px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #64748b;
+  padding: 2px 4px;
+  outline: none;
+  cursor: pointer;
+}
+
+.save-skill-btn {
+  background: #6366f1;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  cursor: pointer;
+}
+
+.cancel-skill-btn {
+  background: #e2e8f0;
+  color: #64748b;
+  border: none;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  cursor: pointer;
+}
+
+/* Learning Goals Section */
+.learning-goals-section {
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid #f1f5f9;
+}
+
+.learning-goals-section h4 {
+  margin: 0 0 10px 0;
+  font-size: 14px;
+  color: #555;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.learning-goal-chip {
+  background: #eef2ff;
+  border: 1px solid #e0e7ff;
+}
+
+.learning-goal-chip .skill-name {
+  color: #4f46e5;
+}
+
+/* Banner Notification */
+.new-skills-banner {
+  background: linear-gradient(135deg, #e0e7ff 0%, #eef2ff 100%);
+  border: 1px solid #c7d2fe;
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  animation: slideDown 0.3s ease;
+}
+
+.new-skills-banner span {
+  font-size: 14px;
+  color: #3730a3;
+  font-weight: 500;
+}
+
+.banner-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-banner-action {
+  background: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-banner-action:hover {
+  background: #4338ca;
+}
+
+.btn-banner-dismiss {
+  background: transparent;
+  color: #4f46e5;
+  border: 1px solid #c7d2fe;
+  border-radius: 4px;
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-banner-dismiss:hover {
+  background: #e0e7ff;
+}
+
+/* Unconfirmed Highlights */
+.skill-chip.highlight-unconfirmed {
+  border-color: #f59e0b;
+  background: #fffbeb;
+  box-shadow: 0 0 8px rgba(245, 158, 11, 0.4);
+  animation: pulseHighlight 2s infinite;
+}
+
+.confirm-btn {
+  background: #22c55e;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  cursor: pointer;
+  margin-right: 4px;
+}
+
+.confirm-btn:hover {
+  background: #16a34a;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulseHighlight {
+  0% { box-shadow: 0 0 0 0 rgba(245, 158, 11, 0.7); }
+  70% { box-shadow: 0 0 0 6px rgba(245, 158, 11, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(245, 158, 11, 0); }
+}

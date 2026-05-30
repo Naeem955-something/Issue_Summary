@@ -1,0 +1,280 @@
+.issue-details-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(226, 232, 240, 0.8);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.issue-details-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+  border-color: rgba(79, 70, 229, 0.2);
+}
+
+.card-top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.type-badge-container {
+  display: flex;
+  gap: 6px;
+}
+
+.issue-type-badge {
+  background: #f1f5f9;
+  color: #475569;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 4px;
+}
+
+.non-coding-badge {
+  background: #fdf2f8;
+  color: #db2777;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 4px;
+}
+
+.badge-group {
+  display: flex;
+  gap: 6px;
+}
+
+.difficulty-badge {
+  font-size: 10px;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+.difficulty-badge.easy {
+  background: rgba(16, 185, 129, 0.1);
+  color: #047857;
+}
+
+.difficulty-badge.medium {
+  background: rgba(245, 158, 11, 0.1);
+  color: #b45309;
+}
+
+.difficulty-badge.hard {
+  background: rgba(239, 68, 68, 0.1);
+  color: #b91c1c;
+}
+
+.issue-title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+  color: #0f172a;
+  line-height: 1.4;
+}
+
+.summary-desc {
+  margin: 0;
+  font-size: 13.5px;
+  color: #475569;
+  line-height: 1.5;
+}
+
+.skills-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12.5px;
+}
+
+.skills-lbl {
+  font-weight: 600;
+  color: #64748b;
+  min-width: 60px;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.skill-item-badge {
+  font-size: 11px;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 12px;
+}
+
+.skill-item-badge.req {
+  background: rgba(79, 70, 229, 0.08);
+  color: #4f46e5;
+  border: 1px solid rgba(79, 70, 229, 0.15);
+}
+
+.skill-item-badge.help {
+  background: rgba(147, 51, 234, 0.08);
+  color: #9333ea;
+  border: 1px solid rgba(147, 51, 234, 0.15);
+}
+
+.expanded-details-body {
+  border-top: 1px solid #f1f5f9;
+  padding-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 13px;
+  color: #334155;
+}
+
+.detail-meta-item strong {
+  color: #0f172a;
+}
+
+.takeaway-text {
+  margin: 4px 0 0 0;
+  color: #475569;
+  line-height: 1.5;
+  white-space: pre-line;
+}
+
+.card-actions-row {
+  margin-top: 8px;
+  border-top: 1px solid #f1f5f9;
+  padding-top: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.status-badges-group {
+  display: flex;
+  gap: 8px;
+}
+
+.metric-button {
+  border: none;
+  font-size: 11.5px;
+  font-weight: 700;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  transition: all 0.2s;
+}
+
+.metric-button:hover {
+  transform: translateY(-1px);
+}
+
+/* Health colors */
+.metric-button.health.green {
+  background: rgba(16, 185, 129, 0.1);
+  color: #047857;
+  border: 1px solid rgba(16, 185, 129, 0.2);
+}
+
+.metric-button.health.amber {
+  background: rgba(245, 158, 11, 0.1);
+  color: #b45309;
+  border: 1px solid rgba(245, 158, 11, 0.2);
+}
+
+.metric-button.health.red {
+  background: rgba(239, 68, 68, 0.1);
+  color: #b91c1c;
+  border: 1px solid rgba(239, 68, 68, 0.2);
+}
+
+/* Match colors */
+.metric-button.match.green {
+  background: rgba(99, 102, 241, 0.1);
+  color: #4f46e5;
+  border: 1px solid rgba(99, 102, 241, 0.2);
+}
+
+.metric-button.match.amber {
+  background: rgba(245, 158, 11, 0.1);
+  color: #b45309;
+  border: 1px solid rgba(245, 158, 11, 0.2);
+}
+
+.metric-button.match.red {
+  background: rgba(239, 68, 68, 0.1);
+  color: #b91c1c;
+  border: 1px solid rgba(239, 68, 68, 0.2);
+}
+
+.functional-buttons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.btn-text {
+  background: none;
+  border: none;
+  color: #64748b;
+  font-size: 12.5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.btn-text:hover {
+  color: #0f172a;
+}
+
+.btn-chat-ai {
+  background: white;
+  border: 1px solid #cbd5e1;
+  color: #334155;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-chat-ai:hover {
+  border-color: #6366f1;
+  color: #4f46e5;
+  background: rgba(99, 102, 241, 0.02);
+}
+
+.btn-apply-github {
+  background: #0f172a;
+  color: white;
+  border: none;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 7px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  transition: all 0.2s;
+}
+
+.btn-apply-github:hover {
+  background: #1e293b;
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.15);
+  transform: translateY(-1px);
+}
